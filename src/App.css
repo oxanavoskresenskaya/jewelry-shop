@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+body {
+    background-color: #ececec;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #545454;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+    position: absolute;
+    top: 30px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #820000;
+    margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+    position: absolute;
+    top: 100px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    color: #4E6C50;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
+    color: #820000;
+}
+p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    color: #545454;
+    text-overflow: ellipsis;
+    overflow: auto;
+    white-space: wrap;
+    width: 300px;
+    text-align: center;
+}
+h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 36px;
+    color: #545454;
+}
+.container-slaider {
+    display: flex;
+}
+.btn-slaider {
+background-color: #ececec;
+border: none;
+font-size: 30px;
+}
+.showBtn {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    color: #545454;
+}
+.btn {
+    background-color: #A3BB98;
+    color: #ececec;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
+    width: 248px;
+    height: 72px;
+    border: none;
+}
+.container-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-filter {
+    background-color: #A3BB98;
+    color: #ececec;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    border: none;
+    white-space: wrap;
 }
