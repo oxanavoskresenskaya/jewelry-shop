@@ -1,5 +1,4 @@
 import './App.css';
-import { useState } from 'react';
 import logo from './image-logo-grey.jpg'
 import Home from './Home';
 import About from './About';
@@ -10,6 +9,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function App() {
   
@@ -22,7 +22,7 @@ function App() {
         </div>
         <Link to='/' className='link'>Главная</Link>
         <Link to='./about' className='link'>Обо мне</Link>
-
+        <HashLink to='#hash-fragment' className='link'>Изделия</HashLink>
         <Link to='./delivery' className='link'>Заказ и доставка</Link>
       </nav>
       <Routes>

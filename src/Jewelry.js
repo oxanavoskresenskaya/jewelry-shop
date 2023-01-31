@@ -7,7 +7,7 @@ function Jewelry ({anyThings}) {
         setShowText (!showText);
     };
     return (
-        <div className='products'>
+        <div className='products' id='hash-fragment'>
             {anyThings.map((el) => {
                 const {id, image, searchTerm, productName, description, price, showMore} = el;
                 return (

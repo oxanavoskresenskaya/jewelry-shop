@@ -1,3 +1,4 @@
+import './App.css';
 import { useState } from "react";
 function Slaider ({slaide}) {
     const [picture, setPicture]=useState(0);
@@ -22,7 +23,7 @@ function Slaider ({slaide}) {
             {
                 slaide.length !== 1 ? <button onClick={previousImage} className='btn-slaider'>❮</button> : null
             }
-            <img src={slaide[picture]} alt='jewelry' width='413px' height='423px'/>
+            <img src={slaide[picture]} className ='img-jewelry' alt='jewelry' width='413px' height='423px'/>
             {
             slaide.length !== 1 ? <button onClick={nextImage} className='btn-slaider'>❯</button> : null
             }

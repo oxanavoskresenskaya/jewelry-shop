@@ -102,3 +102,91 @@ font-size: 30px;
     border: none;
     white-space: wrap;
 }
+.about-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.about-text {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    color: #545454;
+    text-overflow: ellipsis;
+    overflow: auto;
+    white-space: wrap;
+    width: 500px;
+    text-align: center;
+}
+.about-header-one {
+    position: absolute;
+    top: -70px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #820000;
+    margin: 0;
+}
+.about-logo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.logo-about {
+    padding: 20px;
+}
+.container-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #D9D9D9;
+    width: 1230px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.delivery-header-one {
+    position: absolute;
+    top: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #820000;
+    margin: 0;
+}
+.delivery-header-three {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
+    color: #545454;
+    margin: 5px;
+    text-align: center;
+}
+.block-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #D9D9D9;
+    width: 1230px;
+    height: 450px;
+    position: relative;
+    margin-bottom: 20px;
+}
+span {
+    text-decoration: underline;
+}
+.img-jewelry {
+    border: 10px solid rgba(236, 236, 236, 0.5);
+}
