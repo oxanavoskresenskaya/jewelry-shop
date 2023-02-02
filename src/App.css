@@ -237,6 +237,9 @@ span {
 .logo-footer {
     padding: 20px;
 }
+.hidden {
+    display: none;
+}
 @media all and (max-width: 1000px) {
     .container-buttons {
         flex-wrap: wrap;

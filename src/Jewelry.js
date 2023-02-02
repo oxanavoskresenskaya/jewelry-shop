@@ -23,6 +23,7 @@ function Jewelry ({anyThings}) {
                         </p>
                         <h4>{price}</h4>
                         <button className="btn" >Заказать</button>
+                        <div className="hidden" >{searchTerm}</div>    
                     </div>
                 ) 
             })}
