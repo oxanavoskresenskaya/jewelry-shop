@@ -1,12 +1,14 @@
 import whatsapp from './whatsapp.png';
-
+import ReactWhatsapp from "react-whatsapp";
 function Delivery () {
     return (
-        <div className='container-block'>
+        <div className='container-block' id='hash-delivery'>
             <div className="block-one">
                 <h1 className='delivery-header-one'>Заказать</h1>
                 <h3  className='delivery-header-three'>Пиши мне в Whats App:</h3>
-                <img src={whatsapp} alt='logo-whatsapp' width='90px' className='logo-about'/>
+                <ReactWhatsapp number="7-938-161-0950" className='logo-about'>
+                    <img src={whatsapp} alt='logo-whatsapp' className='logo-whatsapp'/>
+                </ReactWhatsapp>
             </div>
             <div className="block-two">
                 <h1 className='delivery-header-one'>Доставка</h1>

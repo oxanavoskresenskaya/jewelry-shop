@@ -1,8 +1,7 @@
 import './App.css';
 import logo from './image-logo-grey.jpg'
 import Home from './Home';
-import About from './About';
-import Delivery from './Delivery';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,7 +9,12 @@ import {
   Link
 } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
+import email from './letter-logo.png';
+import telegram from './telegram-logo.png';
+import {
+  EmailShareButton,
+  TelegramShareButton
+} from "react-share";
 function App() {
   
   return (
@@ -18,20 +22,24 @@ function App() {
       <Router>
       <nav>
         <div className='container-logo' >
-          <img src={logo} alt='logo' width='270px' height='230px'/>
+          <img src={logo} alt='logo' className='logo' />
         </div>
         <Link to='/' className='link'>Главная</Link>
-        <Link to='./about' className='link'>Обо мне</Link>
+        <HashLink to='#hash-about' className='link'>Обо мне</HashLink>
         <HashLink to='#hash-fragment' className='link'>Изделия</HashLink>
-        <Link to='./delivery' className='link'>Заказ и доставка</Link>
+        <HashLink to='.#hash-delivery' className='link'>Заказ и доставка</HashLink>
       </nav>
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/delivery' element={<Delivery/>}/>
       </Routes>
-
       </Router>
+      <div className='footer'>
+          <h3 className='footer-header'>Website designed by Oksana Voskresenskaya</h3>
+          <div className='footer-logo' >
+          <EmailShareButton url='dariaudina@icloud.com'><img src={email} alt='logo-email' width='60px' className='logo-footer' /></EmailShareButton>
+           <TelegramShareButton url='https://t.me/oxanavoskresenskaya'><img src={telegram} alt='logo-telegram' width='60px' className='logo-footer'/></TelegramShareButton>
+          </div>
+      </div>
     </div>
   )
 }

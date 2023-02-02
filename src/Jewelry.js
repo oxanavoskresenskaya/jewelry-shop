@@ -14,7 +14,7 @@ function Jewelry ({anyThings}) {
                     <div key={id} className='product-card'>
                         <h3>{productName}</h3>
                         {
-                            image !==undefined ? <Slaider slaide = {image}/> : null
+                            image !==undefined ? <Slaider slaide = {image} /> : null
                         }
                         <p>{showMore ? description : description.substring(0, 50)+'...'}
                         {
