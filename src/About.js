@@ -3,7 +3,6 @@ import instagram from './icon-instagram.png';
 import email from './letter-logo.png';
 import {
     EmailShareButton,
-    TelegramShareButton
   } from "react-share";
 function About () {
     return (
